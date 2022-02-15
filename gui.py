@@ -51,7 +51,7 @@ def input_handle(window, frm_boardFrame, ent_userInputField, txt_textBox):
         while output != "FP\n":
             for word in outputWords:
                 txt_textBox.insert("end", word + ' ')
-                #time.sleep(0.15)
+                time.sleep(0.15)
                 window.update()
             output = p.stdout.readline()
             p.stdout.flush()
